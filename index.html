@@ -3,224 +3,235 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Review this part and modify it to your liking -->
-    <meta name="description" content="Sample text for portfolio template meta tag">
-    <meta name="keywords" content="Sample text for portfolio template meta tag">
-    <meta name="author" content="Sample text for portfolio template meta tag">
-    <title>My portfolio website</title>
-    <!-- Adding favicon for older and modern browsers,
-        It is best to add favicon to the main folder, 
-        I used an only ico converter for best result,
-        Do not forget to clear you cache to see the changes -->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- font for the quote -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
-    <!-- font for the body -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
-    <!-- font for headings -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/img/favicon.png">
+    <title>Sudharsan - Portfolio</title>
+
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/a9cdbedf57.js" crossorigin="anonymous"></script>
+
+    <!-- Styling CSS -->
+
+    <!-- Theme 1 -->
+    <link rel="stylesheet" id="themeStylesheet" href="./assets/css/style.css">
+
+    <!-- Theme 2 -->
+    <!-- <link rel="stylesheet" href="./assets/css/style-two.css"> -->
+
+    <!-- Theme 3 -->
+    <!-- <link rel="stylesheet" href="./assets/css/style-three.css"> -->
+
 </head>
 
 <body>
-    <!-- navigation bar -->
-    <nav class="sticky">
-        <label for="drop" class="toggle" id="main-toggle">
-            <span class="nav-icon"></span>
-        </label>
-        <input type="checkbox" id="drop">
-        <ul class="main-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-me.html">About me</a></li>
-            <li><a href="skill-set.html">Skill-set</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="#contact-me">Contact me</a></li>
-        </ul>
-    </nav>
 
-    <!-- introduction -->
-    <header class="grid-system-2 w-900 padding">
-        <section class="align-center">
-            <h1 class="medium-spacing">Hello, I am</h1>
-            <h1 class="large">Your name</h1>
-            <p class="justify">That large class above is only suitable for short names/nicknames. If you want to display
-                your full name there, consider using the "medium-spacing" and "colorful-letter" classes instead, to
-                maintain responsiveness.</p>
-        </section>
-        <section class="center align-center">
-            <img class="header-img max-width max-height" src="assets/profile-pic.png" alt="profile-picture">
-        </section>
+    <header>
+
+        <div>
+            <a href="./index.html"><span class="logo">WEB-DEVELOPER</span></a>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+
     </header>
 
+    <main>
 
-    <!-- quote -->
-    <article class="baby-pink">
-        <p class="quote uppercase">Write something touchy, funny, or deep here.</p>
-        <p>And unfold it here a little.</p>
-    </article>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div>
+                <div>
+                    <h4 title="Hello, How are you?">Hi, There!</h4>
+                    <h2 class="hero-section__title">I'm <span>Sudharsan</span></h2>
+                    <p class="hero-section__desc">I am a Web Developer skilled in Frontend Technologies, such as HTML,
+                        CSS, and JavaScript, creating interactive web experiences. I'm passionate about blending design
+                        aesthetics with functionality.</p>
+                </div>
 
-    <!-- about me -->
-    <!-- That about me png is something I've made for fun, it has a purple version too, feel free to use it or change it to anything else. -->
-    <section class="wrapper">
-        <section class="margin-auto">
-            <img class="max-width max-height" src="assets/about-me.png" alt="about-me-logo">
-        </section>
-        <section class="justify align-center">
-            <p class="bold">About me</p>
-            <p>Here you may write something captivating and exciting about yourself, so that everyone wants to use that
-                button below.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor officia nulla in culpa
-                necessitatibus maiores natus quae adipisci magnam. Voluptas voluptatibus voluptatem est fugiat,
-                provident incidunt perferendis fuga soluta?.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius obcaecati labore pariatur quisquam veniam,
-                assumenda consectetur asperiores accusamus fugit. </p>
-            <p class="padding-top"><a href="about-me.html" class="button-outline">More info</a></p>
-        </section>
-    </section>
-
-    <!-- skills -->
-    <!-- use this to showcase your skills, if you make changes, do not forget to modify the css accordingly -->
-    <section>
-        <h3 class="main-title center padding">Skills</h3>
-    </section>
-    <section class="wrapper">
-        <section class="column">
-            <p class="padding-bottom">Technical skills</p>
-            <section class="skills">
-                <ul class="no-bullet-list no-padding-list-item">
+                <ul class="social-icons">
+                    <!-- Social Icons -->
                     <li>
-                        <p>html</p>
-                        <span class="progress-bar"><span class="html"></span></span>
+                        <a href="https://fb.me/sudharsandaniel.sudharsandaniel" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
                     </li>
                     <li>
-                        <p>css</p>
-                        <span class="progress-bar"><span class="css"></span></span>
+                        <a href="https://www.linkedin.com/in/sudharsan-a-b40506290/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <p>javascript</p>
-                        <span class="progress-bar"><span class="javascript"></span></span>
+                        <a href="https://instagram.com/sudharsan_daniel" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
                     </li>
                     <li>
-                        <p>php, mysql</p>
-                        <span class="progress-bar"><span class="php"></span></span>
+                        <a href="https://twitter.com/Sudharsandaniel" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
                     </li>
                 </ul>
-            </section>
-        </section>
-        <section class="column">
-            <p class="padding-bottom">Professional skills</p>
-            <section class="skills">
-                <ul class="no-bullet-list no-padding-list-item">
-                    <li>
-                        <p>communication</p>
-                        <span class="progress-bar"><span class="comm-adapt"></span></span>
-                    </li>
-                    <li>
-                        <p>teamplayer, adaptability</p>
-                        <span class="progress-bar"><span class="team-player"></span></span>
-                    </li>
-                    <li>
-                        <p>problem solving</p>
-                        <span class="progress-bar"><span class="problem-solving"></span></span>
-                    </li>
-                    <li>
-                        <p>open-minded</p>
-                        <span class="progress-bar"><span class="open-minded"></span></span>
-                    </li>
-                </ul>
-            </section>
-        </section>
-    </section>
-    </section>
 
-    <!-- Projects -->
-    <!-- If you have more projects you are working on at the moment, or just want to show more, double the whole section below without the title and you are good to go -->
-    <section>
-        <h3 class="main-title center padding">Projects I am currently working on</h3>
-    </section>
-    <section class="wrapper">
-        <section class="column card justify flex">
-            <img class="box" src="assets/project1.png" alt="project1">
-            <p class="padding bold center">Project name here</p>
-            <p>Project description here.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium totam, iusto recusandae, repudiandae
-                molestias adipisci perferendis, beatae quia voluptates aspernatur consequatur minima? Maiores neque
-                ullam explicabo, autem molestiae velit delectus?</p>
-            <p class="padding-top bottom"><a href="portfolio.html" class="button-outline">Portfolio</a></p>
-        </section>
-        <section class="column card justify flex">
-            <img class="box" src="assets/project2.png" alt="project2">
-            <p class="padding bold center">Project name here</p>
-            <p>Project description here.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dignissimos facilis molestias, laborum
-                repellendus delectus accusantium, laboriosam aut cupiditate culpa eum animi deleniti nostrum quibusdam
-                consequatur eos in exercitationem dolores!</p>
-            <p class="padding-top bottom"><a href="portfolio.html" class="button-outline">Portfolio</a></p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" title="Got a cool project? Let’s work together!">Hire
+                        me</button>
+                    <button class="btn btn-dark-outlined">
+                        <a href="./assets/my resume/my resume.pdf" download>Download CV</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-img">
+                <img src="assets/img/Sudharsan.jpg" alt="Sudharsan-portfolio" width="350">
+            </div>
         </section>
 
-    </section>
+        <!-- About Section  -->
+        <section class="about-section" id="about">
 
-    <!-- contact me -->
-    <!-- Five logo can be in one row, and if it still not enough, you can create another row, buy doubleing the "box-contact" section -->
-    <section id="contact-me" class="grid-system-2 w-900 padding">
-        <section class="margin-auto">
-            <img class="max-width max-height" src="assets/Contact-me-img.png" alt="contact-me-illustration">
+            <div class="about-img">
+                <img src="assets/img/Sudharsan.jpg" alt="Sudharsan-portfolio">
+            </div>
+
+            <div class="about-content">
+                <h4>About Me</h4>
+                <h2>I am UI Designer & <br> <span>Web Developer</span></h2>
+                <p>Hello there! I'm Sudharsan, a first-year student at Anna University,
+                    majoring in Computer
+                    Science. My academic journey has allowed me to dive deep into Web-Development, and I'm
+                    incredibly passionate about leveraging technology to solve real-world problems. Being a student
+                    in today's dynamic digital era, I've had opportunities to work on exciting projects, some of
+                    which you can explore right here on my portfolio.
+                </p>
+
+                <button class="btn btn-primary">
+                    <a href="https://github.com/danielace1" target="_blank">
+                        Know More <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    </a>
+                </button>
+            </div>
+
         </section>
-        <section class="margin-auto align-center">
-            <h1 class="medium-spacing center">Let's get in touch!<span></span></h1>
-            <section class="box-contact margin-auto padding-top">
-                <span>
-                    <a href="https://www.linkedin.com/" target="_blank"><img class="logo" src="assets/linkedin.png"
-                            alt=""></a>
-                </span>
-                <span>
-                    <a href="https://github.com/" target="_blank"><img class="logo" src="assets/github.png" alt=""></a>
-                </span>
-                <span>
-                    <a href="mailto:xy@gmail.com" target="_blank"><img class="logo" src="assets/email.png" alt=""></a>
-                </span>
-            </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <h2>My <span>Projects</span></h2>
+            <div class="projects-cards">
+                <div class="projects-card-box">
+                    <div class="projects-card-box__icons">
+                        <i class="fa-solid fa-suitcase"></i>
+                    </div>
+                    <div class="projects-card-box__desc">
+                        <h4>Business Website</h4>
+                        <p>A Business website crafted using HTML, CSS, Bootstrap and
+                            JavaScript, showcasing a modern design and interactive elements, serving as a template for
+                            diverse web projects.
+                        </p>
+                    </div>
+                    <div class="projects-card-box__buttons">
+                        <button class="btn btn-dark-outlined">
+                            <a href="https://danielace1.github.io/HTML-CSS/Business%20-%20Bluu/" target="_blank">View <i
+                                    class="fa-solid fa-external-link"></i></a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="projects-card-box">
+                    <div class="projects-card-box__icons">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                    <div class="projects-card-box__desc">
+                        <h4>Music Player</h4>
+                        <p>A music player built with HTML, CSS, and JavaScript, offering
+                            an
+                            intuitive interface for playlist management and audio playback, optimized for both desktop
+                            and
+                            mobile experiences.
+                        </p>
+                    </div>
+                    <div class="projects-card-box__buttons">
+                        <button class="btn btn-dark-outlined">
+                            <a href="https://danielace1.github.io/Web-Apps/SoundSphere%20-Music%20Player/"
+                                target="_blank">View <i class="fa-solid fa-external-link"></i></a>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="projects-card-box">
+                    <div class="projects-card-box__icons">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+                    <div class="projects-card-box__desc">
+                        <h4>Sign-in Page</h4>
+                        <p>A sleek sign-in page designed using HTML, CSS, and JavaScript,
+                            ensuring user-friendly interactions and a secure authentication process.
+                        </p>
+                    </div>
+                    <div class="projects-card-box__buttons">
+                        <button class="btn btn-dark-outlined">
+                            <a href="https://danielace1.github.io/HTML-CSS/Responsive%20Sign-in%20Page/"
+                                target="_blank">View <i class="fa-solid fa-external-link"></i></a>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
         </section>
-    </section>
 
-    <!-- special thanks -->
-    <!-- Here you can see the free resources I've used for the logos and illustrations. Do not forget to give credit to the creators of the free stuffs use may use additionally -->
-    <section>
-        <p class="small thanks justify w-900 padding-left">*Thanks for the illustration:
-            <a class="link colorful-letter" href="https://storyset.com/work" target="_blank">work illustrations</a> by
-            Storyset
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <h2>Contact <span>ME!</span></h2>
+            <form action="">
+                <div>
+                    <input type="text" name="name" placeholder="FullName" required>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <textarea name="message" placeholder="Type Message" rows="5"></textarea>
+                </div>
+                <div>
+                    <button class="btn btn-primary">SEND MESSAGE</button>
+                </div>
+            </form>
+            <div class="contact__github">
+                <button class="btn">
+                    <a href="https://github.com/danielace1" target="_blank">
+                        <i class="fa-brands fa-github"></i> Github
+                    </a>
+                </button>
+            </div>
+        </section>
 
-        </p>
-        <p class="small thanks justify w-900 padding-left">*Thanks for the icons:
-            <span><a class="link colorful-letter" href="https://www.iconfinder.com/Flatart" target="_blank">flatart,
-                </a></span>
-            <span><a class="link colorful-letter" href="https://www.iconfinder.com/font-awesome" target="_blank">font
-                    awesome, </a></span>
-            <span><a class="link colorful-letter" href="https://www.iconfinder.com/fluent-designsystem"
-                    target="_blank">microsoft, </a></span>
-            <span><a class="link colorful-letter" href="https://www.iconfinder.com/Chanut-is" target="_blank">chanut is
-                    indurstries, </a></span>
-            <span><a class="link colorful-letter" href="https://www.iconfinder.com/Kalashnyk" target="_blank">kalash
-                </a></span>
-            on Iconfinder
-        </p>
-    </section>
+    </main>
 
-    <!-- footer -->
-    <!-- waits for you to take over! -->
-    <footer>@iluskaland 2024</footer>
+    <footer>
+        <p>Copyright &copy; 2023 - <a href="https://github.com/danielace1" target="_blank">Sudharsan</a> - All Rights
+            Reserved.</p>
+        <div class="footer-buttons">
+            <button data-theme="./assets/css/style.css" class="footer__theme1 active-theme">Theme 1</button>
+            <button data-theme="./assets/css/style-two.css" class="footer__theme2">Theme 2</button>
+            <button data-theme="./assets/css/style-three.css" class="footer__theme3">Theme 3</button>
+        </div>
+
+    </footer>
+
+    <!-- JS -->
+    <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>
